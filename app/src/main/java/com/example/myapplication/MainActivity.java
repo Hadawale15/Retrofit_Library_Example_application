@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         RetrofitInstance.getInstance().apiInterface.getUserDetails().enqueue(new Callback<List<UserModel>>() {
             @Override
             public void onResponse(Call<List<UserModel>> call, Response<List<UserModel>> response) {
-                userList=response.body();
+               userList=response.body();
                 recyclerView.setAdapter(new UserAdapter(userList,getBaseContext()));
 //                for (int i=0;i<userList.size();i++)
 //                {
