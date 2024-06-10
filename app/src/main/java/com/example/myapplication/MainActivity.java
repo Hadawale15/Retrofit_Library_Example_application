@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 //                    Log.d("userList",userList.get(i).getTitle());
 //                }
 
-
             }
 
             @Override
